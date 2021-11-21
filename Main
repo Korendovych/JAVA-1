@@ -1,0 +1,58 @@
+/**
+Vita Korendovych
+Extra
+ */
+
+import java.util.Scanner;
+
+public class Extra {
+    
+     public static void main(String[] args) {
+         
+    Scanner teclado = new Scanner(System.in); 
+     System.out.println("Introduzca un numero entero: ");
+     
+     int numero = teclado.nextInt();
+     System.out.print(numero + " = ");
+     System.out.print(" 1 ");
+     int count=1;
+   
+     
+    
+         while( (count/3)!=numero ) {
+             
+             count = count * 2;
+             
+             System.out.print("* 2 ");
+           //  System.out.println(count);
+             
+            if ( (count/3) == numero ) {
+                System.out.print("/3");
+            //    System.out.println(count/3);
+            
+            } else if ((count/3)<numero) {
+             count = count * 2;
+                System.out.print("* 2 ");
+            //    System.out.println(count);
+                if ( (count/3)==numero ) {
+                    System.out.print("/3");}
+             
+            
+            } else {
+             while ( (count/3) > numero ) {  
+             count = count / 3;
+                  System.out.print("/3");
+            //      System.out.println(count);
+                 if (count/3 == numero) {
+                     System.out.println("/3");
+                 } 
+              }
+             
+             }
+             
+         }
+     // una mas dividion por /3
+   }
+    
+    
+}
